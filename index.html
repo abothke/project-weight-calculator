@@ -1,12 +1,36 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>project-weightcalculator</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>project-weightcalculator</title>
+  </head>
+  <body>
+    <section>
+      <h1>Idealgewichtrechner</h1>
+      <form onsubmit="return false">
+        <label for="height">Körpergröße</label>
+        <input
+          type="number"
+          name="height"
+          id="height"
+          placeholder="Deine Größe in cm"
+        />
+        <label for="age">Alter</label>
+        <input type="number" name="age" id="age" placeholder="Dein Alter" />
+        <label for="bodyType">Körperbau</label>
+        <div>
+          <input type="radio" name="bodyType" id="breit" />
+          <label for="breit">Breit</label>
+          <input type="radio" name="bodyType" id="schmal" />
+          <label for="breit">Schmal</label>
+          <button onclick="idWeight()">Submit</button>
+        </div>
+        <p id="result">Dein Idealgewicht ist <span></span></p>
+        <h3></h3>
+      </form>
+    </section>
     <script src="./assets/js/main.js"></script>
-    </body>
-    </html>
+  </body>
+</html>
